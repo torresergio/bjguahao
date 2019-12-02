@@ -1,19 +1,19 @@
 
 # username: 您的的用户名(一般是手机号码)
-username: "13888888888"
+username: "13051579891"
 
 # password: 密码
-password: "*****"
+password: "wewe0219"
 
 # date: 挂号日期,如填写latest自动挂最新一天
-date: "2018-01-01"
+date: "latest"
 
 
 # hospitalId: 医院id
-hospitalId: "162"
+hospitalId: "270"
 
 # departmentId: 科室id
-departmentId: "200002248"
+departmentId: "200043774"
 
 # 关于如何获取 hospitalId 和 departmentId
 # 1. 打开挂号页面
@@ -27,7 +27,7 @@ dutyCode: "1"
 
 # patientName: 患者姓名
 # 若是自己挂号可为空
-patientName: "蔡桓公"
+patientName: "房立俊"
 
 # 就诊卡号
 hospitalCardId: ""
@@ -43,10 +43,7 @@ reimbursementType: "1"
 # doctorName: 医生姓名
 # 不填写的话默认选最好的医生
 # 填写后若这个医生没有号，会自动选其余号中最好的医生
-doctorName:
-  - "扁鹊"
-  - "华佗"
-  - "杨永信"
+doctorName: ""
 
 # 指定医生
 # false:默认不指定
@@ -54,10 +51,10 @@ doctorName:
 assign: "false"
 
 #true:检索每天余票
-remaining: "false"
+remaining: "true"
 
 #remaining=true时,默认检索工作日,周末:6,7
-week: "1,2,3,4,5"
+week: "1,2"
 
 #挂号类型是否为儿童号
 # 可选项为"true" 或者 "false"
