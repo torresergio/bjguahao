@@ -43,7 +43,8 @@ reimbursementType: "1"
 # doctorName: 医生姓名
 # 不填写的话默认选最好的医生
 # 填写后若这个医生没有号，会自动选其余号中最好的医生
-doctorName: ""
+doctorName:
+  - "扁鹊"
 
 # 指定医生
 # false:默认不指定
@@ -54,7 +55,7 @@ assign: "false"
 remaining: "true"
 
 #remaining=true时,默认检索工作日,周末:6,7
-week: "1,2"
+week: "1,2,3,4,5"
 
 #挂号类型是否为儿童号
 # 可选项为"true" 或者 "false"
@@ -74,7 +75,7 @@ cidType: "1"
 # chooseBest: 选择模式
 # 不填写的默认从最好的医生开始选择
 # 可选项为"yes" 或者 "no"
-chooseBest: "yes"
+chooseBest: "no"
 
 # DebugLevel: 调试等级
 # 支持的调试等级有 debug/info/warning/error/critical
