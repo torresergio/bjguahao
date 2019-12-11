@@ -346,19 +346,6 @@ class Guahao(object):
             return "NotReady"
         self.print_doctor()
         doctors = self.dutys
-        if self.config.assign == 'true':
-            for doctor_conf in self.config.doctorName:
-                for doctor in doctors:
-                    if self.get_doctor_name(doctor) == doctor_conf and (doctor['totalCount']%2!=0):
-                        logging.info("选中:" + self.get_doctor_name(doctor))
-                        return doctor
-            return "NoDuty"
-        # 按照配置优先级选择医生
-        for doctor_conf in self.config.doctorName:
-            for doctor in doctors:
-                if self.get_doctor_name(doctor) == doctor_conf and doctor['totalCount']%2!=0:
-                    return doctor
-
         # 若没有合适的医生，默认返回最好的医生
         for doctor in doctors:
             if doctor['totalCount']%2 != 0:

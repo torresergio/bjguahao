@@ -79,7 +79,7 @@ chooseBest: "no"
 
 # DebugLevel: 调试等级
 # 支持的调试等级有 debug/info/warning/error/critical
-DebugLevel: "info"
+DebugLevel: "debug"
 
 #使用ios短信和mac电脑接收验证码
 # 可选项为"true" 或者 "false"
